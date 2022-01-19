@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "MonthStatistics.module.scss"
+    ],
+    "names": [],
+    "file": "MonthStatistics.module.css"
+}

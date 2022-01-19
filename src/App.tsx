@@ -3,18 +3,23 @@ import { Route, Routes } from "react-router-dom";
 import {Home} from "./pages/Home/components/Home";
 import {MonthStatistics} from "./pages/MonthStatistics/components/MonthStatistics";
 import Header from "./pages/shared/Header";
+import Popup from "./pages/shared/Popup/Popup";
 
 
 
 function App() {
   return (
-    <div className="App">
-        <Header />
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/month-statistics' element={<MonthStatistics />} />
-            </Routes>
-    </div>
+      <div className="global-container">
+          <Popup />
+          <div className="container">
+              <Header />
+              <Routes>
+                  <Route path='/' element={<Home />} />
+                  <Route path='/month-statistics' element={<MonthStatistics />} />
+              </Routes>
+          </div>
+      </div>
+
   );
 }
 
